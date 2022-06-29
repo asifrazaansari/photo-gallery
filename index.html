@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Nature<span> Gallery</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="images\menu.svg" alt="open-navigator">
+
+            <header>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images\exit.svg" alt="close-navigator">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+        </div>
+    </nav>
+
+    <main>
+        <section class="forest-img">
+            <div class="forest">
+                <div class="forest-photo img1"></div>
+                <h2>Hohenstein</h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img2"></div>
+                <h2>Hesco</h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img3"></div>
+                <h2>Indian Lake Park </h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img4"></div>
+                <h2>Leutasch</h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img5"></div>
+                <h2>Naugatuck State Forest </h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img6"></div>
+                <h2>Panther Creek Falls</h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img7"></div>
+                <h2>Parc du Mont-Tremblant </h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img8"></div>
+                <h2>Sol Duc Falls</h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+            <div class="forest">
+                <div class="forest-photo img9"></div>
+                <h2> Spring Brook</h2>
+                <p>Lorem usto hic corrmolestias laborum nobis? Saepe ut praesentium hic sint doloremque eum iste enim
+                    corrupti obcaecati tempore?</p>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <footer class="container-box">
+        <h3>Contact Form</h3>
+        <form action="/action">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        header = document.querySelector('header');
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            header.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            header.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+
+</html>
